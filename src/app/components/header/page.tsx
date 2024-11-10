@@ -45,15 +45,14 @@ const Header = () => {
       </div>
       <ul className={`navbar ${isMenuOpen ? 'active' : ''}`}>
         <li className="navbar__item"><Link href={"/"}>Home</Link></li>
-        <li className="navbar__item"><Link href={"/about"}>About</Link></li>
-        <li className="navbar__item"><Link href={"/skills"}>Skills</Link></li>
-        <li className="navbar__item"><Link href={"/project"}>Projects</Link></li>
+        <li className="navbar__item"><Link href={"/components/about"}>About</Link></li>
+        <li className="navbar__item"><Link href={"/components/project"}>Projects</Link></li>
       </ul>
      
       <div className={`close-icon ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
         <FaTimes />
       </div>
-      <button className="navbar__button"><Link href={"/contact"}>Contact</Link></button>
+      <button className="navbar__button"><Link href={"/components/contact"}>Contact</Link></button>
     </header>
   );
 };
